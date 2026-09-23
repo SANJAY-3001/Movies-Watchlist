@@ -5,6 +5,233 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #1C1C1C;
+    font-family: "Inter", sans-serif;
+    color: #FFFFFF;
+}
+
+.container {
+    width: 550px;
+    height: auto;
+    box-shadow: 0 0 3px #FFFFFF;
+    margin: 20px auto;
+    background-color: #121212;
 }
 
 
+h1 , p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+/* layout */
+
+header {
+    position: relative;
+}
+
+.header-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-text > h1 {
+    font-size: 2.625rem;
+}
+
+.header-text > a {
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+
+/* search */
+
+.search-form {
+    position: relative;
+    width: 430px;
+    height: 38px;
+
+    margin: -25px auto 0;   
+
+    display: flex;
+}
+
+.search-input {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #2E2E2F;
+
+    padding: 0 0 0 12px;
+
+    border-radius: 6px;
+}
+
+.search-input img {
+    margin-right: 8px;
+}
+
+.search-input input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 0.875rem;
+}
+
+.search-input input::placeholder {
+    color: #A5A5A5;
+}
+
+.search-form button {
+    justify-self: flex-end;
+    align-self: stretch;
+    border: none;
+    border-radius: 0 6px 6px 0;
+
+    padding: 0 1.4em;
+
+    background-color: #4B4B4B;
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 0.875rem;
+
+    cursor: pointer;
+}   
+
+
+/* movies list section */
+
+.movies-list-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40% 0;
+}
+
+.movies-list-placeholder span {
+    color: #2E2E2F;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+
+/* movie box */
+
+.movie-box {
+    margin: 2em auto 0;
+    display: flex;
+    gap: 1em;
+    width: 461px;
+}
+
+.poster {
+    width: 100px;
+    height: 147px;
+}
+
+.movie-info {
+    width: 342px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.movie-title {
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.rating , .movie-details{
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.movie-details {
+    display: flex;
+    align-items: center;
+}
+
+.duration {
+    margin-right: 1em;
+}
+
+.movie-details input {
+    margin-left: 1em;
+}
+
+.movie-details label {
+    margin-left: 0.5em;
+}
+
+.movie-description {
+    font-size: 0.875rem;
+    color: #A5A5A5;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.line {
+    border-bottom: 1.5px solid #2C2C2C;
+    width: 461px;
+    margin: 2em auto;
+}
+
+
+
+/* Read more for movies Plot */
+
+.movie-description {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    padding-right: 4.6875em;
+}
+
+.movie-description.expanded {
+    -webkit-line-clamp: unset;
+}
+
+.description-wrapper {
+    position: relative;
+}
+
+.read-more {
+    border: none;
+    background: none;
+    padding: 0;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

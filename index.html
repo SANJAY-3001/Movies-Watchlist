@@ -3,16 +3,45 @@
     <head>
         <title>Movies Watchlist</title>
         <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <header>
+        <div class="container">
+            <header>
+                <img src="images/movie-bg-img.png" alt="Three framed movie posters 
+                mounted side-by-side on a wall featuring The
+                Godfather, The Dark Knight, and Scarface under
+                a dark overlay.">
+                <div class="header-text">
+                    <h1>Find your film</h1>
+                    <a href="#" target="_blank">My Watchlist</a>
+                </div>
+            </header>
+            <form class="search-form" id="search-form">
+                <div class="search-input">
+                    <img class="search-icon" src="images/search-icon.png">
+                    <input
+                    type="text"
+                    placeholder="Blade Runner"
+                    name="movie-title"
+                    autocomplete="off"
+                    >
+                    <button type="submit">Search</button>
+                </div>
+            </form>
+            <main>
+                <section class="movie-list-section" id="movie-list-section">
+                    <div class="movies-list-placeholder">
+                        <img src="images/flim-icon.png">
+                        <span>Start exploring</span>
+                    </div>
+                </section>
 
-        </header>
-        <main>
+            </main>
+        </div>
 
-        </main>
-
+        <script src="env.js"></script>
         <script src="scripts.js"></script>
     </body>
 
