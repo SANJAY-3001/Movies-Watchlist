@@ -18,18 +18,20 @@
                     <a href="#" target="_blank">My Watchlist</a>
                 </div>
             </header>
-            <form class="search-form">
+            <form class="search-form" id="search-form">
                 <div class="search-input">
                     <img class="search-icon" src="images/search-icon.png">
                     <input
                     type="text"
                     placeholder="Blade Runner"
+                    name="movie-title"
+                    autocomplete="off"
                     >
                     <button type="submit">Search</button>
                 </div>
             </form>
             <main>
-                <section class="movie-list-section">
+                <section class="movie-list-section" id="movie-list-section">
                     <div class="movies-list-placeholder">
                         <img src="images/flim-icon.png">
                         <span>Start exploring</span>
@@ -39,6 +41,7 @@
             </main>
         </div>
 
+        <script src="env.js"></script>
         <script src="scripts.js"></script>
     </body>
 

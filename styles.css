@@ -12,7 +12,7 @@ body {
 
 .container {
     width: 550px;
-    height: 780px;
+    height: auto;
     box-shadow: 0 0 3px #FFFFFF;
     margin: 20px auto;
     background-color: #121212;
@@ -27,6 +27,11 @@ a {
     text-decoration: none;
     color: inherit;
     display: inline-block;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
 }
 
 
@@ -123,13 +128,6 @@ header {
 
 /* movies list section */
 
-.movie-list-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
 .movies-list-placeholder {
     display: flex;
     flex-direction: column;
@@ -141,4 +139,99 @@ header {
     color: #2E2E2F;
     font-size: 1.2rem;
     font-weight: 700;
+}
+
+
+/* movie box */
+
+.movie-box {
+    margin: 2em auto 0;
+    display: flex;
+    gap: 1em;
+    width: 461px;
+}
+
+.poster {
+    width: 100px;
+    height: 147px;
+}
+
+.movie-info {
+    width: 342px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.movie-title {
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.rating , .movie-details{
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.movie-details {
+    display: flex;
+    align-items: center;
+}
+
+.duration {
+    margin-right: 1em;
+}
+
+.movie-details input {
+    margin-left: 1em;
+}
+
+.movie-details label {
+    margin-left: 0.5em;
+}
+
+.movie-description {
+    font-size: 0.875rem;
+    color: #A5A5A5;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.line {
+    border-bottom: 1.5px solid #2C2C2C;
+    width: 461px;
+    margin: 2em auto;
+}
+
+
+
+/* Read more for movies Plot */
+
+.movie-description {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    padding-right: 4.6875em;
+}
+
+.movie-description.expanded {
+    -webkit-line-clamp: unset;
+}
+
+.description-wrapper {
+    position: relative;
+}
+
+.read-more {
+    border: none;
+    background: none;
+    padding: 0;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
