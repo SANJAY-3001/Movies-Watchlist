@@ -12,7 +12,7 @@ body {
 
 .container {
     width: 550px;
-    height: auto;
+    min-height: 800px;
     box-shadow: 0 0 3px #FFFFFF;
     margin: 20px auto;
     background-color: #121212;
@@ -128,17 +128,30 @@ header {
 
 /* movies list section */
 
-.movies-list-placeholder {
+.movies-list-placeholder , .watchlist-placeholder {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 40% 0;
 }
 
-.movies-list-placeholder span {
-    color: #2E2E2F;
+.movies-list-placeholder span , .watchlist-placeholder p {
     font-size: 1.2rem;
     font-weight: 700;
+}
+.movies-list-placeholder span {
+    color: #2E2E2F;
+}
+
+.watchlist-placeholder p {
+    color: #787878;
+}
+
+.watchlist-placeholder a {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-top: 1em;
 }
 
 
